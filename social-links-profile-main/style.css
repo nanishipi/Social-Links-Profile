@@ -1,0 +1,104 @@
+@import url('https://fonts.google.com/specimen/Inter');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    border-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: hsl(0, 0%, 8%);
+    font-family: Inter;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+}
+
+.attribution a {
+    color: hsl(75, 94%, 57%);
+}
+
+/* Profile Container Styling */
+
+.links-container {
+    width: 27vh;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(0, 0%, 12%);
+    padding: 4rem;
+    border-radius: 2rem;
+}
+
+.profile-picture {
+    border-radius: 10rem;
+    height: 15vh;
+}
+
+.profile-name {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.profile-location {
+    color: hsl(75, 94%, 57%);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.profile-description {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.media-link {
+    color: white;
+    background-color: hsl(0, 0%, 20%);
+    padding: 1.3rem;
+    width: 25vh;
+    border-radius: 1rem;
+    font-weight: 600;
+}
+
+.media-link:hover {
+    background-color: hsl(75, 94%, 57%);
+    transition: all .8s;
+    color: hsl(0, 0%, 12%);
+}
+
+/* Utility Classes */
+
+.u-center-text {
+    text-align: center;
+}
+
+.u-margin-bottom-big {
+    margin-bottom: 2.5rem;
+}
+
+.u-margin-bottom-medium {
+    margin-bottom: 2rem;
+}
+
+.u-margin-bottom-small {
+    margin-bottom: .8rem;
+}
+
+@media (max-width: 375px) {
+    html {
+        font-size: 50%;
+    }
+
+    .links-container {
+        width: 40vh;
+    }
+}
